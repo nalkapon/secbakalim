@@ -1,0 +1,82 @@
+/* src/pages/Tournament.css */
+
+/* Ana kapsayıcı (container) */
+.tournament-container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: sans-serif;
+    color: #333;
+  }
+  
+  /* Eşleşme alanı (maçların gösterildiği kısım) */
+  .match-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  /* Her bir seçenek kutusu (item) */
+  .item-box {
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fafafa;
+  }
+  
+  .item-box:hover {
+    transform: scale(1.05);
+    border-color: #aaa;
+  }
+  
+  /* Resimler */
+  .item-box img {
+    width: 250px; /* Önceden 200px idi, şimdi 250px yaparak büyüttük */
+    height: auto; /* En-boy oranını korumak için height'i auto bırak */
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* İsimler (h3) */
+  .item-box h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* Kazanan ekranında resmi biraz büyütelim */
+  .winner-image {
+    width: 350px;  /* Önceden 300px idi, şimdi 350px */
+    border-radius: 8px;
+    border: 2px solid #333;
+  }
+  
+  /* Yükleniyor mesajı */
+  .loading {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Tek kalan şehir/yemek vs. */
+  .single-item {
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  /* Buton */
+  .btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
